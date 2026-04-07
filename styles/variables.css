@@ -1,1 +1,44 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+    --main-font: "Inter";
+    --accent-font: "PressStart2P";
+    --text-size: 18px;
+    --accent-size: 14px;
+    --card-text-font-weight: 410;
+    --card-title-font-weight: 715;
+    --background: #fff;
+    --main-color: #000;
+    --text-stroke-color: #fff;
+    --contour-color: #000;
+    --hover-fill-color: #000;
+    --animation-fill-color: #f00;
+    --button-text-color: #fff;
+    --button-bg-color: #fff;
+    --button-fill-color: #000;
+    --page-background: repeating-linear-gradient(
+            to right,
+            #d3d3d3 0 2px,
+            transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+            to bottom,
+            #d3d3d3 0 2px,
+            transparent 2px 4px
+    ),
+    linear-gradient(
+            to bottom,
+            #e7e7e7 0%,
+            #e7e7e7 0.01%,
+            #1a1a1a 100%
+    );
+    /* Рассчитано с помощью https://github.com/9elements/min-max-calculator */
+    --fluid-block-width: clamp(23.438rem, 16.285rem + 30.52vw, 43.75rem);
+    --fluid-button-width: clamp(19.125rem, 17.607rem + 6.48vw, 23.438rem);
+    --fluid-modal-width: clamp(21.313rem, 21.048rem + 1.13vw, 22.063rem);
+
+    --content-width: min(100%, var(--fluid-block-width));
+    --modal-width: min(100%, var(--fluid-modal-width));
+
+    --modal-padding-inline: clamp(30px, calc(43.52px - 0.94vw), 40px);
+}

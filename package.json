@@ -1,0 +1,20 @@
+{
+  "name": "zakrivayuschiy-teg",
+  "version": "1.0.0",
+  "description": "проектная работа",
+  "main": "index.html",
+  "repository": "git@github.com:ASosnin/zakrivayuschiy-teg-f.git",
+  "author": "Andrey Sosnin <woodogul@yandex.ru>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "lint:css": "stylelint \"**/*.{css,scss,sass,less}\"",
+    "lint:css:fix": "stylelint \"**/*.{css,scss,sass,less}\" --fix"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1",
+    "stylelint": "^17.3.0"
+  }
+}
