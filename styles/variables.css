@@ -5,8 +5,8 @@
     --accent-font: "PressStart2P";
     --text-size: 18px;
     --accent-size: 14px;
-    --card-text-font-weight: 410;
-    --card-title-font-weight: 715;
+    --card-text-font-weight: 'wght' 410;
+    --card-title-font-weight: 'wght' 715;
     --background: #fff;
     --main-color: #000;
     --text-stroke-color: #fff;

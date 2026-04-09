@@ -62,7 +62,7 @@
     font-size: var(--text-size);
     padding: 4px 10px;
     border: 2px solid var(--main-color);
-    font-weight: var(--card-title-font-weight);
+    font-variation-settings: var(--card-title-font-weight);
 }
 
 .card__image-wrapper {
@@ -148,7 +148,7 @@
 .card__text {
     font-size: var(--text-size);
     line-height: 1.3125rem;
-    font-weight: var(--card-text-font-weight);
+    font-variation-settings: var(--card-text-font-weight);
 }
 
 .card__actions {
