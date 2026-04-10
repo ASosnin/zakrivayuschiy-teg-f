@@ -75,6 +75,7 @@
     inline-size: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    object-position: center;
     display: block;
 }
 
@@ -173,7 +174,7 @@
     transition: box-shadow 0.3s ease;
 }
 
-.button::before {
+.button:not(.card__icon-button)::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -184,7 +185,7 @@
     z-index: 0;
 }
 
-.button:hover::before {
+.button:not(.card__icon-button):hover::before {
     transform: scaleX(1);
 }
 
@@ -197,15 +198,15 @@
 }
 
 .card__icon-button {
+    inline-size: 39px;
+    block-size: 36px;
     border: none;
     background-color: transparent;
 }
 
-.card__icon-button::before {
-    content: none;
-}
-
 .card__icon-button:focus-visible {
+    outline: 2px solid var(--main-color);
+    outline-offset: 0;
     box-shadow: none;
 }
 
